@@ -28,5 +28,14 @@ namespace StockTrading.Desktop
         {
             contentFrame.NavigationService.Navigate(new HomeWindow());
         }
+        
+        private void AlgoLink_Clicked(object sender, RoutedEventArgs e)
+        {
+            contentFrame.NavigationService.Navigate(new AlgoWindow());
+        }
+        private void HomeLink_Clicked(object sender, RoutedEventArgs e)
+        {
+            contentFrame.NavigationService.Navigate(new HomeWindow());
+        }
     }
 }

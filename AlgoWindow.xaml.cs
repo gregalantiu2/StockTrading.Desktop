@@ -11,14 +11,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace StockTrading.Desktop.SharedControls
+namespace StockTrading.Desktop
 {
     /// <summary>
-    /// Interaction logic for NavigationControl.xaml
+    /// Interaction logic for AlgoWindow.xaml
     /// </summary>
-    public partial class NavigationControl : UserControl
+    public partial class AlgoWindow : Page
     {
-        public NavigationControl()
+        public AlgoWindow()
         {
             InitializeComponent();
         }
