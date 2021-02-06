@@ -9,19 +9,61 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="120"></ColumnDefinition>
-            <ColumnDefinition>
-            </ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="200"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <Rectangle Fill="CadetBlue" Grid.Column="0"></Rectangle>
-        <Rectangle Fill="LightYellow" Grid.Column="2"></Rectangle>
+        <Rectangle Fill="#A8AFAE" Grid.Column="0"></Rectangle>
+        <Rectangle Fill="#CFEAC2" Grid.Column="1"></Rectangle>
+        <Rectangle Fill="#A8AFAE" Grid.Column="2"></Rectangle>
     
         <!--Navigation-->
-        <Grid>
-            <StackPanel>
-                <TextBlock Text="Home" FontSize="25" HorizontalAlignment="Center" FontFamily="Bahnschrift" Foreground="Azure" Margin="10"></TextBlock>
+        
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0">
+                <TextBlock Text="Home" FontSize="20" HorizontalAlignment="Center" FontFamily="Bahnschrift" Foreground="Azure" Margin="10"></TextBlock>
+            </StackPanel>
+            <StackPanel Grid.Row="1">
+                <TextBlock Text="Algorithm" FontSize="20" HorizontalAlignment="Center" FontFamily="Bahnschrift" Foreground="Azure" Margin="10"></TextBlock>
             </StackPanel>
         </Grid>
         
+        <!--MainPanel-->
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="4*"></RowDefinition>
+                <RowDefinition Height="4*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0">
+                <TextBlock Text="G2 Day Trader" FontSize="50" HorizontalAlignment="Center" FontFamily="Bahnschrift" Foreground="#3C3D3D" Margin="10"></TextBlock>
+            </StackPanel>
+            <StackPanel Grid.Row="1">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" FontFamily="Bahnschrift" Foreground="#3C3D3D" Margin="10">Portfolio Amount:</TextBlock>
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" FontFamily="Bahnschrift" Foreground="#3C3D3D" Margin="10">Today's Return:</TextBlock>
+                    <TextBlock FontSize="20" HorizontalAlignment="Right" FontFamily="Bahnschrift" Foreground="#3C3D3D" Margin="10">YTD Return:</TextBlock>
+                </StackPanel>
+            </StackPanel>
+            <!--<Rectangle Fill="Black" Grid.Row="0"></Rectangle>-->
+            <!--<Rectangle Fill="#CFEAC2" Grid.Row="1"></Rectangle>-->
+            <!--<Rectangle Fill="AliceBlue" Grid.Row="2"></Rectangle>
+            <Rectangle Fill="Gold" Grid.Row="3"></Rectangle>-->
+        </Grid>
         
+
+        <!--Positions-->
+        <Grid Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <StackPanel>
+                <TextBlock Text="Positions" FontSize="20" HorizontalAlignment="Center" FontFamily="Bahnschrift" Foreground="Azure" Margin="10"></TextBlock>
+            </StackPanel>
+        </Grid>
     </Grid>
 </Window>
