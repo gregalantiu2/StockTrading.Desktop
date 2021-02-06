@@ -1,0 +1,27 @@
+﻿<Window x:Class="StockTrading.Desktop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StockTrading.Desktop"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="1200">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120"></ColumnDefinition>
+            <ColumnDefinition>
+            </ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Rectangle Fill="CadetBlue" Grid.Column="0"></Rectangle>
+        <Rectangle Fill="LightYellow" Grid.Column="2"></Rectangle>
+    
+        <!--Navigation-->
+        <Grid>
+            <StackPanel>
+                <TextBlock Text="Home" FontSize="25" HorizontalAlignment="Center" FontFamily="Bahnschrift" Foreground="Azure" Margin="10"></TextBlock>
+            </StackPanel>
+        </Grid>
+        
+        
+    </Grid>
+</Window>
