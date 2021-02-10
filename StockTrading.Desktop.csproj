@@ -4,10 +4,18 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWPF>true</UseWPF>
+    <UserSecretsId>1544ca48-a026-44f2-a1ff-a5065e58895c</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Alpaca.Markets" Version="4.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="3.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="StockTrading.Libraries">
+      <HintPath>..\StockTrading.Libraries\bin\Debug\netcoreapp3.1\StockTrading.Libraries.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
